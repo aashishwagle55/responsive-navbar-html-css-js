@@ -1,3 +1,8 @@
+:root {
+  --navbar-color: #1d3557;
+  --navbar-font-color: #f1faee;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,11 +18,11 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background: #1d3557;
+  background: var(--navbar-color);
 }
 
 .logo {
-  color: #f1faee;
+  color: var(--navbar-font-color);
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 20px;
@@ -30,7 +35,7 @@ nav {
 }
 
 .nav-links a {
-  color: #f1faee;
+  color: var(--navbar-font-color);
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: bold;
@@ -48,7 +53,7 @@ nav {
 .burger div {
   width: 30px;
   height: 2px;
-  background: #f1faee;
+  background: var(--navbar-font-color);
   margin: 7px 0;
   transition: all 0.3s;
 }
@@ -75,13 +80,13 @@ nav {
     height: 92vh;
     top: 8vh;
     width: 100%;
-    background: #1d3557;
+    background: var(--navbar-color);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    transition: all 0.5s ease-in;
   }
   .nav-links li {
     opacity: 0;
